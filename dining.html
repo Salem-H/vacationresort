@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/dine.css">
+    <script src="./scripts/dine.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"></div>
+        <a href="home.html">Home</a>
+        <a href="overnightstay.html">Stay</a>
+        <a href="dining.html">Dine</a>
+        <a href="rentcar.html">Rent</a>
+        <a href="activities.html">Activities</a>
+    </div>  
+    <h2>Dining Options</h2>
+
+    <div class="option">
+        <label><input type="radio" name="diningOption" value="payAsYouGo" onclick="toggleDiningOptions()"> Pay as You Go</label>
+        <label><input type="radio" name="diningOption" value="allInclusive" onclick="toggleDiningOptions()"> All-Inclusive</label>
+    </div>
+    
+    <div class="restaurant" id="payAsYouGo">
+        <h3>Restaurants</h3>
+        <div>
+            <h4>Sunset Grill</h4>
+            <img src="./images/sunset.avif" alt="Sunset Grill">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div>
+            <h4>Ocean View Diner</h4>
+            <img src="./images/ocean.jpg" alt="Ocean View Diner">
+            <p>Bacon ipsum dolor sit amet bresaola bacon ham hock, salami shoulder turkey frankfurter. Duis elit spare ribs.</p>
+        </div>
+    </div>
+    
+    <div class="all-inclusive" id="allInclusive">
+        <h3>All-Inclusive Price Chart</h3>
+        <table class="price-chart">
+            <thead>
+                <tr>
+                    <th>Plan</th>
+                    <th>Adult</th>
+                    <th>Child</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Basic</td>
+                    <td>$62.50/day</td>
+                    <td>$49.99/day</td>
+                </tr>
+                <tr>
+                    <td>Premium (incl drinks)</td>
+                    <td>$80.00/day</td>
+                    <td>$49.99/day</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>The All-Inclusive option can be added to your reservation at check-in.</p>
+    </div>
+    
+</body>
+</html>

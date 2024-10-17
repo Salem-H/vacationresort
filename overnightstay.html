@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Quote Form</title>
+    <link rel="stylesheet" href="">
+   <link rel="stylesheet" href="style/stay.css">
+   <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"></div>
+        <a href="home.html">Home</a>
+        <a href="overnightstay.html">Stay</a>
+        <a href="dining.html">Dine</a>
+        <a href="rentcar.html">Rent</a>
+        <a href="activities.html">Activities</a>
+    </div>
+<h2>Get a Price Quote</h2>
+<form>
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" name="checkin" required>
+    </div>
+
+    <div class="form-group">
+        <label for="nights">Number of Nights (1 - 28):</label>
+        <input type="number" id="nights" name="nights" min="1" max="28" required>
+    </div>
+
+    <div class="form-group">
+        <label>Room Type:</label>
+        <div class="radio-group">
+            <label><input type="radio" name="roomType" value="Queen" required> Queen</label>
+            <label><input type="radio" name="roomType" value="King"> King</label>
+            <label><input type="radio" name="roomType" value="2-Bedroom Suite"> 2-Bedroom Suite</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="adults">Number of Adults (1 - 4):</label>
+        <input type="number" id="adults" name="adults" min="1" max="4" required>
+    </div>
+
+    <div class="form-group">
+        <label for="children">Number of Children (0 - 4):</label>
+        <input type="number" id="children" name="children" min="0" max="4" required>
+    </div>
+
+    <div class="form-group">
+        <label>Discount:</label>
+        <div class="radio-group">
+            <label><input type="radio" name="discount" value="None" required> None</label>
+            <label><input type="radio" name="discount" value="AAA/Senior"> AAA/Senior (10%)</label>
+            <label><input type="radio" name="discount" value="Military"> Military (20%)</label>
+        </div>
+    </div>
+
+    <button type="submit">Get Price Quote</button>
+</form>
+
+</body>
+</html>

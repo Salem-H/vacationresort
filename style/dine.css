@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+.option {
+    margin-bottom: 20px;
+}
+.restaurant, .all-inclusive {
+    display: none;
+    margin-top: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.restaurant img {
+    width: 200px;
+    height: auto;
+    float: right;
+    margin-left: 15px;
+}
+.price-chart {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+.price-chart th, .price-chart td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.price-chart th {
+    background-color: #f2f2f2;
+}
