@@ -30,8 +30,34 @@ body {
     }
 }
 .sh{
+    font-size: large;
+    color: white;
     background-color: aliceblue;
 }
 p{
     align-items: center;
+}
+.moving-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    animation: moveBackground 15s linear infinite;
+    z-index: -1; /* Place it behind other content */
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Bring content above background */
 }
