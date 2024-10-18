@@ -18,15 +18,15 @@
         <a href="activities.html">Activities</a>
     </div>
 <h2>Get a Price Quote</h2>
-<form>
+<form id="estimateForm">
     <div class="form-group">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" value="salem" required>
     </div>
 
     <div class="form-group">
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email"  value="salem@gmail.com"required>
     </div>
 
     <div class="form-group">
@@ -36,13 +36,13 @@
 
     <div class="form-group">
         <label for="nights">Number of Nights (1 - 28):</label>
-        <input type="number" id="numberOFNights" name="nights" min="1" max="28" required>
+        <input type="number" id="numberOfNights" name="nights" min="1" max="28" value="4" required>
     </div>
 
     <div class="form-group">
         <label>Room Type:</label>
         <div class="radio-group">
-            <label><input type="radio" name="roomType" id="queen" required> Queen</label>
+            <label><input type="radio" name="roomType" id="queen" required checked> Queen</label>
             <label><input type="radio" name="roomType" id="king"> King</label>
             <label><input type="radio" name="roomType" id="suite"> 2-Bedroom Suite</label>
         </div>
@@ -50,24 +50,24 @@
 
     <div class="form-group">
         <label for="adults">Number of Adults (1 - 4):</label>
-        <input type="number" id="adults" name="adults" min="1" max="4" required>
+        <input type="number" id="adults" name="adults" min="1" max="4" value="2" required>
     </div>
 
     <div class="form-group">
         <label for="children">Number of Children (0 - 4):</label>
-        <input type="number" id="children" name="children" min="0" max="4" required>
+        <input type="number" id="children" name="children" min="0" max="4" value="0" required>
     </div>
 
     <div class="form-group">
         <label>Discount:</label>
         <div class="radio-group">
             <label><input type="radio" name="discount" id="none" required> None</label>
-            <label><input type="radio" name="discount" id="senior"> AAA/Senior (10%)</label>
+            <label><input type="radio" name="discount" id="senior" checked> AAA/Senior (10%)</label>
             <label><input type="radio" name="discount" id="military"> Military (20%)</label>
         </div>
     </div>
 
-    <button id="getPriceQuoteButton" type="submit">Get Price Quote</button>
+    <input id="getPriceQuoteButton" type="submit" value="Estimate Stay Cost">
 </form>
 <pre id="getRoomRateOutput">
     ?
